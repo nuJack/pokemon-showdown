@@ -6,9 +6,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
   },
   {
     name: "[Gen 1] Ubers Smart vs RBY AI",
-    desc: "Gen 1 Ubers tournament simulator: p1 smart AI vs p2 RBY-style original AI.",
     mod: 'gen1rbyaitournament',
-    ruleset: ['[Gen 1] Ubers'],
+    ruleset: ['[Gen 1] Ubers', 'RBY AI Stat Drop Fail'],
     challengeShow: false,
     searchShow: false,
     tournamentShow: false,
