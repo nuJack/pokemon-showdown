@@ -43,10 +43,11 @@ export class RBYOriginalAI {
   }
 
   choose(request: RequestData): string {
-    if (request.forceSwitch?.[0]) return this.chooseSwitch(request);
-    if (request.active?.[0]?.moves) return this.chooseMove(request);
-    if (request.teamPreview) return 'team 123456';
-    return 'default';
+  if (request.forceSwitch?.[0]) return this.chooseSwitch(request);
+  if (request.active?.[0]?.moves) return this.chooseMove(request);
+  if (request.teamPreview) return 'team 123456';
+  return 'default';
+}
   }
 
   chooseSwitch(request: RequestData): string {
